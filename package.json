@@ -1,0 +1,56 @@
+{
+    "name": "webpack-react-spa-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "npm run serve:dev",
+        "build:prod": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+        "serve:prod": "cross-env NODE_ENV=production webpack serve --config webpack.prod.js",
+        "build:dev": "cross-env NODE_ENV=development webpack --config webpack.dev.js",
+        "serve:dev": "cross-env NODE_ENV=development webpack serve --config webpack.dev.js"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true,
+        "printWidth": 80,
+        "semi": false,
+        "bracketSpacing": false
+    },
+    "keywords": [],
+    "author": "Sidney Liebrand",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.12.9",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-proposal-export-default-from": "^7.12.1",
+        "@babel/preset-env": "^7.12.7",
+        "@babel/preset-react": "^7.12.7",
+        "autoprefixer": "^10.0.4",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.2",
+        "clean-webpack-plugin": "^3.0.0",
+        "cross-env": "^7.0.2",
+        "css-loader": "^5.0.1",
+        "eslint": "^7.14.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-react": "^7.21.5",
+        "eslint-webpack-plugin": "^2.4.0",
+        "html-webpack-plugin": "^4.5.0",
+        "postcss": "^8.1.10",
+        "postcss-loader": "^4.1.0",
+        "prettier": "^2.2.1",
+        "style-loader": "^2.0.0",
+        "stylelint-plugin-stylus": "^0.9.0",
+        "stylus": "^0.54.8",
+        "stylus-loader": "^4.3.0",
+        "webpack": "^5.8.0",
+        "webpack-cli": "^4.2.0",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^5.4.0"
+    },
+    "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    }
+}
